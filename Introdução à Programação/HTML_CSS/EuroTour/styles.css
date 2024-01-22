@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #fff;
+    min-height: 200vh;
+}
+
+header {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    margin-bottom: 5%;
+    background-color: rgb(8, 81, 116);
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(108, 108, 255);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+main {
+    text-align:center;
+    align-items: center;
+    background-color: #fff;
+}
+
+main h1, h2,p{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #000;
+}
+
+main figcaption {
+    color: #000;
+}
+
+.city1,
+.city2,
+.city3 {
+    padding: 40px 100px;
+}
+
+.city1,
+.city2,
+.city3 h2, p {
+    color: #000;
+}
+
+.city1 {
+    background: linear-gradient(to right, #FF0000 0%, #FF0000 33%, #FFFF00 33%, #FFFF00 66%, #FF0000 66%, #FF0000 100%);
+}
+
+.city2 {
+    background: linear-gradient(to right, #0055A4 0%, #0055A4 33%, #FFFFFF 33%, #FFFFFF 66%, #EF3340 66%, #EF3340 100%);
+}
+
+.city3 {
+    background: linear-gradient(to right, #008C45 33%, #FFFFFF 33%, #FFFFFF 66%, #FF0000 66%);
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+footer {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    background-color: rgb(8, 81, 116);
+}
+
+footer ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    position: relative;
+    list-style: none;
+}
+
+footer ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(108, 108, 255);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
