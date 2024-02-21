@@ -1,0 +1,24 @@
+h1 {
+    color: blueviolet;
+    background-color: aqua;
+}
+
+p {
+    background-color: black;
+    color: tomato;
+}
+
+div {
+    margin-top: 20px;
+    background-color: blanchedalmond;
+}
+
+.caixa{
+    color: blue;
+    background-color:yellow;
+}
+
+#ultima-caixa {
+    color: bisque;
+    background-color: yellowgreen;
+}
