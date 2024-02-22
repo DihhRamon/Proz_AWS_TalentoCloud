@@ -3,6 +3,7 @@
 let quantidadeSubtotal = document.getElementById("quantidade-subtotal");
 let valorSubtotal = document.getElementById("valor-subtotal");
 let btnAdicionarProduto01 = document.getElementById("btn-adicionar-produto-01");
+let btnRemoverProduto01 = document.getElementById("btn-subtrair-produto-01");
 let qtdProduto01 = document.getElementById("quantidade-produto-01");
 let valorProduto01 = 11.66
 
@@ -22,7 +23,7 @@ function atualizarSubtotal(){
 
 atualizarSubtotal()
 
-function adicionarUm(){
+function adicionar(){
 // Adicionar 1 à quantidade do produto
 qtdProduto01.value = Number(qtdProduto01.value) + 1
 
@@ -36,5 +37,22 @@ subtotalInfo.valor = subtotalInfo.valor + valorProduto01
 atualizarSubtotal()
 }
 
+function remover(){
+    if (qtdProduto01.value > 0){
+// Remover 1 à quantidade do produto
+qtdProduto01.value = Number(qtdProduto01.value) - 1
+
+// Remover 1 à quantidade subtotal
+subtotalInfo.quantidade = subtotalInfo.quantidade - 1
+
+// Subtrair o valor do produto ao subtotal
+subtotalInfo.valor = subtotalInfo.valor - valorProduto01
+
+// Atualizar o DOM
+atualizarSubtotal()
+    }
+}
+
 // Definir quando devem ser manipulados os elementos (eventos)
-btnAdicionarProduto01.addEventListener("click", adicionarUm)
+btnAdicionarProduto01.addEventListener("click", adicionar)
+btnRemoverProduto01.addEventListener("click", remover)
