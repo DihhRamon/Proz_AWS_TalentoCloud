@@ -47,7 +47,7 @@ VALUES
 
 INSERT INTO consulta (id_consulta, veterinario, cliente, nome_pet, especie_pet, data_consulta, valor_consulta, codigo_vet, id_cliente)
 VALUES
-('1','Alexadre','Camila','Milu','Bovino','2024-03-15','5.000','1','3'),
+('1','Alexadree','Camila','Milu','Bovino','2024-03-15','5.000','1','3'),
 ('2','Bruna','Diego','Loki','Canino','2024-02-10','700.00','4','4'),
 ('3','Julio','Carlos','Luna','Felino','2024-04-01','1.500','3','2'),
 ('4','Fernanda','Isadora','Jade','Canina','2024-03-26','500','2','1');
