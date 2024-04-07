@@ -50,7 +50,7 @@ VALUES
 ('1','Alexadre','Camila','Milu','Bovino','2024-03-15','5.000','1','3'),
 ('2','Bruna','Diego','Loki','Canino','2024-02-10','700.00','4','4'),
 ('3','Julio','Carlos','Luna','Felino','2024-04-01','1.500','3','2'),
-('4','Fernandaa','Isadora','Jade','Canina','2024-03-26','500','2','1');
+('4','Fernanda','Isadora','Jade','Canina','2024-03-26','500','2','1');
 
 ALTER TABLE consulta
 ADD CONSTRAINT fk_codigo_vet FOREIGN KEY (codigo_vet) REFERENCES veterinario(codigo),
