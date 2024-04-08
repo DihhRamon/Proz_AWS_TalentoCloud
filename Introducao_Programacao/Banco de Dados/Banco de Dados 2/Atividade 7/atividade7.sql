@@ -55,3 +55,28 @@ VALUES
 ALTER TABLE consulta
 ADD CONSTRAINT fk_codigo_vet FOREIGN KEY (codigo_vet) REFERENCES veterinario(codigo),
 add CONSTRAINT fk_id_cliente FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente);
+
+-- Querys
+
+-- LEFT JOIN
+
+SELECT nome, consulta.especie_pet FROM cliente LEFT JOIN consulta on cliente.id_cliente = consulta.id_cliente
+
+-- RIGHT JOIN
+
+SELECT nome, email, cliente, nome_pet FROM veterinario RIGHT JOIN consulta on veterinario.codigo = consulta.codigo_vet
+
+-- FULL JOIN
+
+SELECT nome, email, data_admissao, cliente, nome_pet, especie_pet FROM veterinario
+LEFT JOIN consulta on veterinario.codigo = consulta.codigo_vet
+UNION
+SELECT nome, email, data_admissao, cliente, nome_pet, especie_pet FROM veterinario
+RIGHT JOIN consulta on veterinario.codigo = consulta.codigo_vet
+
+-- INNER JOIN
+
+SELECT vet.nome, vet.especialidade, con.nome_pet ,con.data_consulta, con.valor_consulta
+FROM veterinario as vet
+INNER JOIN consulta AS con 
+on vet.codigo = con.codigo_vet
